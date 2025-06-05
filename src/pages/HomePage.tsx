@@ -7,7 +7,7 @@ import {
   Globe,
   Shield,
   Droplet,
-  Gauge,
+  // Gauge,
   ArrowRight,
   Building,
   Home,
@@ -19,7 +19,7 @@ import BrandSection from "../components/home/BrandSection";
 import HeadingSection from "../components/home/HeadingSection";
 import GroupCompanies from "../components/home/GroupCompanies";
 import WaterFilterSection from "../components/home/WaterFilterSection";
-import BackgroundBoxes from "../components/home/backgroundboxes";
+// import BackgroundBoxes from "../components/home/backgroundboxes";
 import ProductsPage1 from "../components/home/ProductsPage1";
 // import HomeSlidePage from "../components/homeslide/HomeSlidePage";
 import WaterParticles from "../components/waterdrops";
@@ -377,7 +377,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
         </section> */}
-        <BackgroundBoxes />
+        {/* <BackgroundBoxes /> */}
         {/* <HomeSlidePage /> */}
         {/* featureSection */}
         {/* <ClientPage/> */}
