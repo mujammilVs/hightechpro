@@ -1,8 +1,8 @@
 // components/BackgroundBoxes.tsx
-"use client";
+
 
 import React from "react";
-import { motion } from "framer-motion";
+
 
 // If you don't have the utils file, you can include this utility directly
 const cn = (...classes: (string | boolean | undefined)[]) => {
@@ -65,7 +65,7 @@ export const BackgroundBoxes = ({
         }}
       >
         {rows.map((_, i) => (
-          <motion.div
+          <div
             key={`row-${i}`}
             className="relative flex"
             style={{ height: boxSize.height }}
@@ -74,7 +74,7 @@ export const BackgroundBoxes = ({
             transition={{ duration: 0.5 }}
           >
             {cols.map((_, j) => (
-              <motion.div
+              <div
                 key={`col-${j}`}
                 className={cn(
                   "border border-white/5", // more subtle border
@@ -108,9 +108,9 @@ export const BackgroundBoxes = ({
                     />
                   </svg>
                 )}
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>
