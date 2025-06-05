@@ -1,4 +1,4 @@
-// import React from "react";
+ import React from "react";
 import image1 from "../../../src/assets/images/wetransfer_hitech/KVQA_logo.jpeg";
 import image2 from "../../../src/assets/images/wetransfer_hitech/norsk-akkreditering-logo.png";
 import image3 from "../../../src/assets/images/wetransfer_hitech/IWWA_logo.png";
