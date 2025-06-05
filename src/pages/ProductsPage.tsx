@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Home, Building, Factory, ArrowRight } from 'lucide-react';
+import image1 from '.././assets/images/wetransfer_hitech/Residential.jpg'
 
 const ProductsPage: React.FC = () => {
   const categories = [
@@ -15,7 +16,7 @@ const ProductsPage: React.FC = () => {
         "50-150 GPD flow rates",
         "Compact design for under-sink installation",
       ],
-      image: "../../src/assets/images/wetransfer_hitech/Residential.jpg",
+      image: image1,
     },
     {
       title: "Commercial RO Membranes",
