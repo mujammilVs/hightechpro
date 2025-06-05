@@ -2,6 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Home, Building, Factory, ArrowRight } from 'lucide-react';
+import image1 from "../../../src/assets/images/wetransfer_hitech/Residential.jpg"
+import image2 from "../../../src/assets/images/wetransfer_hitech/Commercial.webp"
+import image3 from "../../../src/assets/images/wetransfer_hitech/Industrial.jpg"
 
 const ProductsPage1: React.FC = () => {
   const categories = [
@@ -15,7 +18,7 @@ const ProductsPage1: React.FC = () => {
         "50-150 GPD flow rates",
         "Compact design for under-sink installation",
       ],
-      image: "../../src/assets/images/wetransfer_hitech/Residential.jpg",
+      image: image1,
     },
     {
       title: "Commercial RO Membranes",
@@ -27,7 +30,7 @@ const ProductsPage1: React.FC = () => {
         "Up to 400 GPD capacity",
         "Extended membrane life",
       ],
-      image: "../../src/assets/images/wetransfer_hitech/Commercial.webp",
+      image: image2,
     },
     {
       title: "Industrial RO Membranes",
@@ -39,7 +42,7 @@ const ProductsPage1: React.FC = () => {
         '8" diameter elements',
         "Up to 99.7% rejection rate",
       ],
-      image: "../../src/assets/images/wetransfer_hitech/Industrial.jpg",
+      image: image3,
     },
   ];
 
