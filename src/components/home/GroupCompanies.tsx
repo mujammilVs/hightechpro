@@ -1,8 +1,4 @@
 import React from "react";
-import image1 from '../../../src/assets/images/wetransfer_hitech/hitech-membrane-logo-2.png'
-// import image2 from '../../../src/assets/images/wetransfer_hitech/hitechhospitality-300x43-300x43.png'
-// import image3 from '../../../src/assets/images/wetransfer_hitech/hitechconstruction.png'
-
 
 const GroupCompanies = () => {
   // Using public directory paths for images
@@ -10,7 +6,7 @@ const GroupCompanies = () => {
     {
       id: 1,
       name: "KVQA",
-      image: image1,
+      image: "../../../src/assets/images/wetransfer_hitech/hitech-membrane-logo-2.png",
       effect: "hover:brightness-125",
       width: 180,
       height: 80,

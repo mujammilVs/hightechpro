@@ -1,7 +1,8 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { Home, Building, Factory, ArrowRight } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { Home, Building, Factory, ArrowRight } from "lucide-react";
+import image1 from "../../src/assets/images/wetransfer_hitech/Replacement1.jpg";
 
 const ProductsPage: React.FC = () => {
   const categories = [
@@ -15,7 +16,7 @@ const ProductsPage: React.FC = () => {
         "50-150 GPD flow rates",
         "Compact design for under-sink installation",
       ],
-      image: "../../src/assets/images/wetransfer_hitech/Residential.jpg",
+      image: image1,
     },
     {
       title: "Commercial RO Membranes",
@@ -52,7 +53,7 @@ const ProductsPage: React.FC = () => {
         className="bg-gradient-to-b from-blue-900 to-blue-800 text-white py-20"
       >
         <div className="container mx-auto px-4">
-          <motion.h1 
+          <motion.h1
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
@@ -60,13 +61,14 @@ const ProductsPage: React.FC = () => {
           >
             RO Membrane Solutions
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3 }}
             className="text-xl text-blue-100 max-w-2xl"
           >
-            Discover our comprehensive range of reverse osmosis membranes for every application
+            Discover our comprehensive range of reverse osmosis membranes for
+            every application
           </motion.p>
         </div>
       </motion.div>
@@ -83,7 +85,7 @@ const ProductsPage: React.FC = () => {
                 className="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow"
               >
                 <div className="h-48 relative overflow-hidden">
-                  <img 
+                  <img
                     src={category.image}
                     alt={category.title}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
@@ -95,7 +97,7 @@ const ProductsPage: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="p-6">
                   <p className="text-gray-600 mb-4">{category.description}</p>
                   <ul className="space-y-2 mb-6">
@@ -107,7 +109,9 @@ const ProductsPage: React.FC = () => {
                     ))}
                   </ul>
                   <Link
-                    to={`/products/${category.title.toLowerCase().replace(/\s+/g, '-')}`}
+                    to={`/products/${category.title
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")}`}
                     className="inline-flex items-center justify-center w-full px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors group"
                   >
                     View Products
