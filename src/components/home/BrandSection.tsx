@@ -5,7 +5,7 @@ const BrandSection = () => {
   const brands = [
     {
       id: 1,
-      name: "KVQA",
+      name: "KQA",
       image: "../../../src/assets/images/wetransfer_hitech/KVQA_logo.jpeg",
       effect: "hover:brightness-125",
       width: 180,
@@ -13,7 +13,7 @@ const BrandSection = () => {
     },
     {
       id: 2,
-      name: "NORSK",
+      name: "NRSK",
       image:
         "../../../src/assets/images/wetransfer_hitech/norsk-akkreditering-logo.png",
       effect: "hover:scale-110 transform origin-center",
@@ -22,7 +22,7 @@ const BrandSection = () => {
     },
     {
       id: 3,
-      name: "KEVGA",
+      name: "KVGA",
       image: "../../../src/assets/images/wetransfer_hitech/IWWA_logo.png",
       effect: "opacity-80 hover:opacity-100",
       width: 150,
@@ -30,7 +30,7 @@ const BrandSection = () => {
     },
     {
       id: 4,
-      name: "MEMBER INDIAN WATER QUALITY ASSOCIATION",
+      name: "MMBER INDIAN WATER QUALITY ASSOCIATION",
       image: "../../../src/assets/images/wetransfer_hitech/MIWQA_LOGO.jpg",
       effect: "hover:brightness-125",
       width: 220,
