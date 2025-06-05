@@ -22,15 +22,8 @@ interface BackgroundBoxesProps {
 export const BackgroundBoxes = ({
   className,
   gridSize = { rows: 30, cols: 15 }, // Further reduced for better performance
-  colors = [
-    "rgba(147, 197, 253, 0.3)", // softer colors
-    "rgba(249, 168, 212, 0.3)",
-    "rgba(134, 239, 172, 0.3)",
-    "rgba(253, 224, 71, 0.3)",
-    "rgba(252, 165, 165, 0.3)",
-  ],
   boxSize = { width: "2.5rem", height: "2.5rem" }, // Slightly larger default
-  animationDuration = 0.3,
+  // animationDuration = 0.3,
   showPlusIcons = true,
   skewAngle = 15, // More subtle skew by default
 }: BackgroundBoxesProps) => {
@@ -43,9 +36,9 @@ export const BackgroundBoxes = ({
     [gridSize.cols]
   );
 
-  const getRandomColor = React.useCallback(() => {
-    return colors[Math.floor(Math.random() * colors.length)];
-  }, [colors]);
+  // const getRandomColor = React.useCallback(() => {
+  //   return colors[Math.floor(Math.random() * colors.length)];
+  // }, [colors]);
 
   return (
     <div
@@ -69,9 +62,9 @@ export const BackgroundBoxes = ({
             key={`row-${i}`}
             className="relative flex"
             style={{ height: boxSize.height }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // transition={{ duration: 0.5 }}
           >
             {cols.map((_, j) => (
               <div
@@ -84,13 +77,13 @@ export const BackgroundBoxes = ({
                   width: boxSize.width,
                   height: boxSize.height,
                 }}
-                whileHover={{
-                  backgroundColor: getRandomColor(),
-                  transition: { duration: animationDuration },
-                }}
-                animate={{
-                  transition: { duration: 3 + Math.random() * 7 }, // more varied timing
-                }}
+                // whileHover={{
+                //   backgroundColor: getRandomColor(),
+                //   transition: { duration: animationDuration },
+                // }}
+                // animate={{
+                //   transition: { duration: 3 + Math.random() * 7 }, // more varied timing
+                // }}
               >
                 {showPlusIcons && i % 5 === 0 && j % 5 === 0 && (
                   <svg
