@@ -1,4 +1,5 @@
 import React from "react";
+import image1 from '../../../src/assets/images/wetransfer_hitech/KVQA_logo.jpeg'
 
 const BrandSection = () => {
   // Using public directory paths for images
@@ -6,7 +7,7 @@ const BrandSection = () => {
     {
       id: 1,
       name: "KQA",
-      image: "../../../src/assets/images/wetransfer_hitech/KVQA_logo.jpeg",
+      image: image1,
       effect: "hover:brightness-125",
       width: 180,
       height: 80,
