@@ -9,7 +9,7 @@ const BrandSection = () => {
   const brands = [
     {
       id: 1,
-      name: "KVQA",
+      name: "KQA",
       image: image1,
       effect: "hover:brightness-125",
       width: 180,
@@ -17,7 +17,7 @@ const BrandSection = () => {
     },
     {
       id: 2,
-      name: "NORSK",
+      name: "NRSK",
       image: image2,
       effect: "hover:scale-110 transform origin-center",
       width: 120,
@@ -25,7 +25,7 @@ const BrandSection = () => {
     },
     {
       id: 3,
-      name: "KEVGA",
+      name: "KVGA",
       image: image3,
       effect: "opacity-80 hover:opacity-100",
       width: 150,
@@ -33,7 +33,7 @@ const BrandSection = () => {
     },
     {
       id: 4,
-      name: "MEMBER INDIAN WATER QUALITY ASSOCIATION",
+      name: "MMBER INDIAN WATER QUALITY ASSOCIATION",
       image: image4,
       effect: "hover:brightness-125",
       width: 220,
