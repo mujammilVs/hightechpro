@@ -1,4 +1,8 @@
-import React from "react";
+// import React from "react";
+import image1 from "../../../src/assets/images/wetransfer_hitech/KVQA_logo.jpeg";
+import image2 from "../../../src/assets/images/wetransfer_hitech/norsk-akkreditering-logo.png";
+import image3 from "../../../src/assets/images/wetransfer_hitech/IWWA_logo.png";
+import image4 from " ../../../src/assets/images/wetransfer_hitech/MIWQA_LOGO.jpg";
 
 const BrandSection = () => {
   // Using public directory paths for images
@@ -6,7 +10,7 @@ const BrandSection = () => {
     {
       id: 1,
       name: "KVQA",
-      image: "../../../src/assets/images/wetransfer_hitech/KVQA_logo.jpeg",
+      image: image1,
       effect: "hover:brightness-125",
       width: 180,
       height: 80,
@@ -14,8 +18,7 @@ const BrandSection = () => {
     {
       id: 2,
       name: "NORSK",
-      image:
-        "../../../src/assets/images/wetransfer_hitech/norsk-akkreditering-logo.png",
+      image: image2,
       effect: "hover:scale-110 transform origin-center",
       width: 120,
       height: 80,
@@ -23,7 +26,7 @@ const BrandSection = () => {
     {
       id: 3,
       name: "KEVGA",
-      image: "../../../src/assets/images/wetransfer_hitech/IWWA_logo.png",
+      image: image3,
       effect: "opacity-80 hover:opacity-100",
       width: 150,
       height: 80,
@@ -31,7 +34,7 @@ const BrandSection = () => {
     {
       id: 4,
       name: "MEMBER INDIAN WATER QUALITY ASSOCIATION",
-      image: "../../../src/assets/images/wetransfer_hitech/MIWQA_LOGO.jpg",
+      image: image4,
       effect: "hover:brightness-125",
       width: 220,
       height: 80,
@@ -55,7 +58,8 @@ const BrandSection = () => {
               <div
                 key={`first-${brand.id}-${index}`}
                 className={`inline-flex items-center justify-center h-full transition-all duration-300 mx-8 ${brand.effect}`}
-               style={{ width: "200px", height: "150px", padding: "10px" }}>
+                style={{ width: "200px", height: "150px", padding: "10px" }}
+              >
                 <img
                   src={brand.image}
                   alt={brand.name}
