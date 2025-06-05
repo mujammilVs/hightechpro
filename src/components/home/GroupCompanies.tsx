@@ -1,4 +1,7 @@
 import React from "react";
+import image1 from "../../../src/assets/images/wetransfer_hitech/hitech-membrane-logo-2.png";
+import image2 from "../../../src/assets/images/wetransfer_hitech/hitechhospitality-300x43-300x43.png";
+import image3 from "../../../src/assets/images/wetransfer_hitech/hitechconstruction.png";
 
 const GroupCompanies = () => {
   // Using public directory paths for images
@@ -6,7 +9,7 @@ const GroupCompanies = () => {
     {
       id: 1,
       name: "KVQA",
-      image: "../../../src/assets/images/wetransfer_hitech/hitech-membrane-logo-2.png",
+      image: image1,
       effect: "hover:brightness-125",
       width: 180,
       height: 80,
@@ -14,8 +17,7 @@ const GroupCompanies = () => {
     {
       id: 2,
       name: "NORSK",
-      image:
-        "../../../src/assets/images/wetransfer_hitech/hitechhospitality-300x43-300x43.png",
+      image: image2,
       effect: "hover:scale-110 transform origin-center",
       width: 120,
       height: 80,
@@ -23,7 +25,7 @@ const GroupCompanies = () => {
     {
       id: 3,
       name: "KEVGA",
-      image: "../../../src/assets/images/wetransfer_hitech/hitechconstruction.png",
+      image: image3,
       effect: "opacity-80 hover:opacity-100",
       width: 150,
       height: 80,
@@ -64,7 +66,8 @@ const GroupCompanies = () => {
                   height={brand.height}
                   className="object-contain"
                   loading="lazy"
-                  style={{width:"90px",height:"100px"}}/>
+                  style={{ width: "90px", height: "100px" }}
+                />
               </div>
             ))}
           </div>
